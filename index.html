@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Practice</title>
+</head>
+<body>
+  <script>
+    // Array
+    const names = ["rafia", "hafsa", "fatima"];
+
+    names.push("zara");
+    names.push("areej");
+    names.push("nida");
+    names.push(6666);
+    names.push(2227);
+
+    names.shift(); // removes first element
+    names.pop();   // removes last element
+
+    console.log(names);
+    console.log(names.length);
+    console.log(names.includes("malaika"));
+    console.log(names.indexOf("hafsa"));
+    console.log(names.reverse());
+    console.log(names);
+
+    const newName = ["ali", "zeeshan", "zeeshan"];
+    console.log(newName.lastIndexOf("zeeshan"));
+
+    names.forEach((nm) => {
+      console.log(nm);
+    });
+
+    const ages = [4, 5, 55, 66, 668, 890, 444, 789, 9];
+
+    ages.forEach((ag) => {
+      if (ag < 18) {
+        console.log("Under 18:", ag);
+      }
+    });
+
+    const studentNames = ["zeeshan", "shafeeq", "shaheed", "haseeb", "sameer"];
+    studentNames.forEach((sn) => {
+      if (sn.includes("sh")) {
+        console.log("Name with 'sh':", sn);
+      }
+    });
+  </script>
+</body>
+</html>
